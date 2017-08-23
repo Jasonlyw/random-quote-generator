@@ -4,6 +4,9 @@ document.getElementById('loadQuote').addEventListener("click", printQuote, false
 
 var viewedQuotes = [];
 var html = '';
+var red;
+var green;
+var blue;
 
 
 // All the quotes containing the text of quote, source, citation, year
@@ -67,6 +70,17 @@ function getRandomQuote() {
 };
 
 
+// get a random rgb color using Math.random()
+function randomColorGenerator() {
+  var randomColor;
+  red = Math.floor(Math.random() * 256);
+  green = Math.floor(Math.random() * 256);
+  blue = Math.floor(Math.random() * 256);
+  randomColor = 'rgb(' + red + ',' + green + ',' + blue + ')';
+  return randomColor;
+}
+
+
 // printQuote() function with html element using helper function print().
 function printQuote() {
   var selectedQuote = getRandomQuote();
@@ -90,4 +104,8 @@ function printQuote() {
     html += '';
   }
   print(html);
-}
+
+  randomColorGenerator();
+  document.getElementById('randomColor').style.backgroundColor = randomColorGenerator();
+  console.log(selectedQuote.quote);
+};
