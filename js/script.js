@@ -24,7 +24,19 @@ var quotes = [
   {quote: 'You cannot fly like an eagle with the wings of a wren.',
    source: 'William Henry Hudson',
    citation: 'Afoot in England',
-   year: '1909',
+   year: '1909'
+  },
+  {quote: 'If two men agree on everything, you may be sure that one of them is doing the thinking.',
+   source: 'Lyndon B. Johnson'
+  },
+  {quote: 'Comedy is nothing more than tragedy deferred.',
+   source: 'Pico Iyer',
+   citation: 'Time'
+  },
+  {quote: 'Success is meaningless if you can\'t sleep at night because of harsh things said, petty secrets sharpened against hard and stony regret, just waiting to be plunged into the soft underbelly of a \'friendship.\'',
+   source: 'Margaret Cho',
+   citation: 'Margaret Cho\'s Weblog',
+   year: '2006'
   },
 ];
 
